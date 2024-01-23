@@ -26,7 +26,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'theme-clr': '#FF4240'
+                        'theme-clr': '#FF4240',
+                        'h-clr': '#131318',
+                        'p-clr': '#13131899',
                     }
                 }
             }
@@ -35,8 +37,9 @@
 </head>
 
 <body class="manrope">
-    <header class="container mx-auto">
-        <nav class="navbar bg-base-100 mt-3 lg:mt-12">
+    <header class="container mx-auto mb-10 lg:mb-24">
+        <!-- navigation section -->
+        <nav class="navbar bg-base-100 my-3 lg:my-12">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -85,8 +88,100 @@
                 <a class="btn text-white bg-theme-clr m-0">Get Ticket</a>
             </div>
         </nav>
+        <!-- banner section -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="mx-auto w-11/12 lg:w-[98vw]" />
+                <div
+                    class="absolute flex gap-4 lg:gap-6 left-1/2 transform -translate-x-1/2 lg:left-20 bottom-2 lg:bottom-8">
+                    <a href="#slide2" class="rounded-full bg-black first-line:text-white px-3 py-1">❮</a>
+                    <a href="#slide2" class="rounded-full bg-black first-line:text-white px-3 py-1">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/4.png" class="mx-auto w-11/12 lg:w-[98vw]" />
+                <div
+                    class="absolute flex gap-4 lg:gap-6 left-1/2 transform -translate-x-1/2 lg:left-20 bottom-2 lg:bottom-8">
+                    <a href="#slide1" class="rounded-full bg-black first-line:text-white px-3 py-1">❮</a>
+                    <a href="#slide1" class="rounded-full bg-black first-line:text-white px-3 py-1">❯</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container mx-auto lg:relative mt-4">
+            <div class="lg:absolute bg-black w-11/12 mx-auto lg:w-[45%] p-4 rounded-xl right-8 -top-56">
+                <h2 class="text-lg lg:text-2xl font-extrabold text-white mb-2 lg:mb-6">Meet all the heroes from the
+                    field
+                </h2>
+                <p class="text-sm lg:text-base font-medium text-[#FFFFFF99] leading-6 ">Discover the formidable lineup
+                    of
+                    hockey
+                    players
+                    who
+                    have mastered the art of the game. Heroes on the roster brings their unique skills and
+                    passion to the the world of hockey.</p>
+            </div>
+        </div>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+        <!-- professional hockey's section -->
+        <section class=" w-11/12 lg:w-auto border-dashed border-t-2 border-b-2 mx-auto">
+            <div class="text-center py-8 ">
+                <h2 class="text-h-clr text-lg lg:text-4xl font-extrabold pb-6">Professional Hockeys Club</h2>
+                <p class="text-p-clr text-sm lg:text-base font-medium w-4/5 lg:w-4/6 mx-auto">A Professional
+                    Hockey Club
+                    stands as
+                    a beacon
+                    of
+                    excellence in the world of
+                    ice sports, showcasing
+                    skilled athletes and fostering a spirit of teamwork and dedication in pursuit of victory on the
+                    rink.</p>
+            </div>
+        </section>
+        <section class="grid lg:grid-cols-4 gap-8 mt-6 lg:mt-12 lg:mb-24">
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-theme-clr rotate-[130deg]"
+                    style="--value:87; --size:10rem; --thickness: 10px;" role="progressbar">
+                    <p class="text-h-clr rotate-[230deg] text-3xl font-extrabold text-">87%</p>
+                </div>
+                <h3 class="text-xl font-semibold">Prayer Facility</h3>
+                <p class="text-p-clr text-sm lg:text-base w-3/4 lg:w-auto mx-auto"> From
+                    well-equipped gyms to
+                    specialized recovery areas</p>
+            </div>
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-[#49D293] rotate-[100deg]"
+                    style="--value:95; --size:10rem; --thickness: 10px;" role="progressbar">
+                    <p class="text-h-clr rotate-[260deg] text-3xl font-extrabold text-">95%</p>
+                </div>
+                <h3 class="text-xl font-semibold">Experienced Coach</h3>
+                <p class="text-p-clr text-sm lg:text-base w-3/4 lg:w-auto mx-auto">We provide world class coached for
+                    the development of the players.</p>
+            </div>
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-[#ffb546] rotate-[130deg]"
+                    style="--value:90; --size:10rem; --thickness: 10px;" role="progressbar">
+                    <p class="text-h-clr rotate-[230deg] text-3xl font-extrabold text-">90%</p>
+                </div>
+                <h3 class="text-xl font-semibold">Senior Player</h3>
+                <p class="text-p-clr text-sm lg:text-base w-3/4 lg:w-auto mx-auto">Well experienced senior players helps
+                    the juniors to build their skills
+                </p>
+            </div>
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-[#4C8DF1] rotate-[160deg]"
+                    style="--value:80; --size:10rem; --thickness: 10px;" role="progressbar">
+                    <p class="text-h-clr rotate-[200deg] text-3xl font-extrabold text-">80%</p>
+                </div>
+                <h3 class="text-xl font-semibold">Training Ground</h3>
+                <p class="text-p-clr text-sm lg:text-base w-3/4 lg:w-auto mx-auto">Well suited spacious stadium equiped
+                    with great training ground</p>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
